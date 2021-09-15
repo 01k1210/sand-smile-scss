@@ -1,0 +1,71 @@
+.container{
+    @include container;
+}
+.locations-wrap h2{
+    padding: 100px 0 50px;
+
+    @media (max-width: $tablet) {
+        padding: 70px 0 40px;
+        }
+    @media (max-width: $tablet) {
+        padding: 50px 0 30px;
+        }
+}
+.locations-container{
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $mobile) {
+    display: block;
+    }
+}
+.locations-card{
+    width: 50%;
+    padding: 15px;
+
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
+}
+.locations-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+} 
+.locations-item h3{
+    margin: 0;
+    padding: 30px 0 90px 30px;
+    font-family: 'Roboto';
+    font-size: 40px;
+    line-height: 47px;  
+    color: #FBF2DA;
+
+    @media (max-width: $tablet) {
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: normal;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+.locations-item a{
+    padding: 0 0 30px 30px;
+    font-family: 'Roboto';
+    color: #FBF2DA;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media (max-width: $mobile) {
+        font-size: 18px;
+        line-height: 21x;
+    }
+}

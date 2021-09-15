@@ -1,0 +1,51 @@
+.container{
+    @include container;
+}
+.header{
+    z-index: 10;
+    background: #152B3C ;
+    color: #FBF2DA;
+    opacity :0.9 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    padding: 25px 0 25px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 49px;
+    text-decoration: none;
+    color: inherit;
+
+    @media (max-width: $tablet) {
+        flex-grow: 1;
+    }
+}
+.header-tel{
+    padding: 20px 0 20px;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto';
+    font-size: 28px; 
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+.header-btn-horizontal{
+    display: none;
+
+    @media (max-width: $tablet) {
+        margin-left: 35px;
+        display: block;
+        padding: 20px;
+    }
+}

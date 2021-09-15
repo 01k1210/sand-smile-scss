@@ -1,0 +1,44 @@
+.promo{
+    margin-top: 98px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.container{
+    @include container;
+}
+.main-wrap{
+    padding-top: 191px;
+    padding-bottom: 366px;
+}
+.main-wrap h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 116px;
+    line-height: 136px;
+
+    @media (max-width: $tablet) {
+        font-size: 96px;
+        line-height: 113px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 63px;
+        line-height: 38px;
+        padding-bottom: 30px;
+    }
+
+}
+.main-wrap p{
+    font-family: 'Raleway';
+    font-size: 32px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}

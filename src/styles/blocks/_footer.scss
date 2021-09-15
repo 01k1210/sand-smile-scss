@@ -1,0 +1,42 @@
+.container{
+    @include container;
+}
+footer{
+    background: #152B3C;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-content{
+    padding: 30px 0 30px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 27px;
+    color: #FBF2DA;
+
+    @media (max-width: $mobile) {
+        display: block;
+        text-align: center;
+    }
+}
+.footer-link a{
+    padding-right: 15px;
+}
+
+.footer-link{
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+.footer-link-mobile{
+    display: none;
+
+    @media (max-width: $mobile) {
+        display: block;
+    }
+}
+.footer-link-mobile a{
+        padding: 15px;
+}

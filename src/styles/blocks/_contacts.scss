@@ -1,0 +1,118 @@
+.container{
+    @include container;
+}
+.contacts{
+    font-family: 'Open Sans';
+}
+.contacts-wrapper{
+    padding: 100px 0 90px ;
+
+    @media (max-width: $tablet) {
+        padding: 70px 0 70px ;
+    }
+    @media (max-width: $mobile) {
+        padding: 50px 0 60px ;
+    }
+}
+.contacts-desk{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
+
+}
+.contacts-desk p{
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 27px;
+}
+.contacts-form{
+    padding-top: 87px;
+    margin: 0 auto;
+    width: 66.66%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $tablet) {
+        padding-top: 50px;
+        width: 100%;
+    }
+    @media (max-width: $mobile) {
+        display: block;
+    }
+}
+.form-contacts-right{
+    padding-right: 15px;
+    width: 50%;
+
+    @media (max-width: $mobile) {
+    padding: 0;
+    width: 100%;
+    }
+}
+.form-contacts-left{
+    padding-left: 15px;
+    width: 50%;
+
+    @media (max-width: $mobile) {
+        padding: 0;
+        width: 100%;
+        }
+}
+label{
+    margin: 0 0 5px 20px; 
+    font-size: 20px;
+    line-height: 27px;
+    color: #D46240;
+}
+.form-contacts-input{
+    padding: 20px 0 20px 20px;
+    width: 100%;
+    border-radius: 8px;
+    background: #FBF2DA;
+    border: none;
+}
+.form-contacts-field{
+    margin-top: 30px;
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    background: #FBF2DA;
+    border-radius: 8px;
+    border: none;
+}
+.contacts-checkbox{
+    margin-top: 30px;
+}
+.contacts-checkbox-label{
+    color: black;
+}
+.contacts-btn{
+    width: 100%;
+    @media (max-width: $tablet) {
+        padding: 10px;
+            }
+}
+.contacts-btn-btn{
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    background: #D46240;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+    line-height: 33px;
+    color: #fff;
+    cursor: pointer;
+}
+.contacts-checkbox-label span{
+    @media (max-width: $mobile) {
+    color: #D46240;
+    text-decoration: underline;
+        }
+}
